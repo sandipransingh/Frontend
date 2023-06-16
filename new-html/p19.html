@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        action => server file/ path ()
+        method => POST -> hide the data
+                  GET -> display the data in URL address bar
+        autocomplete=> clear the history -. off /on (default)
+        enctype => encrypt type -> file uploading (multipart/form-data)
+        required => mandatory fill the input field (to recognize the empty field)
+    -->   
+    <form action="http:/localhost/server.php" method="get"> autocomplete="off">
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <label for="user">username</label>
+            <input type="text" name="user" value="admin@gmail.com" readonly required>
+
+            <br><br>
+
+            <label for="pass">password</label>
+ <input type="password" name="pass" id="pass" value="" placeholder="password is of 6 char and above" required"
+
+            <br><br>
+            <input type="submit" value="SignIn">
+            <input type="reset"> value="clear">
+        </fieldset> 
+    </form>
+    <!--
+        label => label for input tag
+        type => the type of input
+        name => carry the value entered inside the field
+        value=> default value
+    -->    
+    </body>
+</html>

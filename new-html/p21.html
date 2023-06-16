@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">search</label>
+        <input type="search" name="myKey" id=""> <!-- hello world = hello+world => string query-->
+
+        <br><br>
+        <label for="">Range</label>
+        <input type="range" name="myRange" id="num" min="0" max="1000" step="50" value="100" onchange="getvalue()"
+        style="width:100%;">
+        <p><strong id="output"></strong></p>
+        <br><br>
+
+        <label for="">choose color</label>
+        <input type="color" name="mycolor" id="">
+
+        <br><br>
+
+        <input type="submit" value="submit">
+        <input type="reset">
+    </form>
+    <script>
+        function getvalue() {
+            var x = document.getElementById("num").value;
+            document.getElementById("output").innerText = x;
+        }
+        getvalue();
+    </script>
+</body>
+</html>
