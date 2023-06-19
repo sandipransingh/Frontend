@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            border:1px solid #ccc;
+        }
+
+        area {
+            border: 5px solid #222;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h3>map tag</h3>
+    <map name="myMap">
+        <area shape="circle" coords="150,150,60" href="http://xyz.com" target="-blank">
+        <area shape="circle" coords="150,250,60" href="https://bepractical.com" target="-blank">
+        <area shape="circle" coords="200,250,60" href="https://google.com" target="-blank">
+    </map>
+    <img src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png" usemap="#myMap" alt="">
+    <!--
+        rect
+        poly
+        circle
+        default
+    -->
+</body>
+</html>
