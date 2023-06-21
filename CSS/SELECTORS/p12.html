@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        optgroup[label~="web"] {
+            color: crimson;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3> [attr ~= value] </h3>
+    <p>represents elements with an atribute name of attr whose value is a whote space-separated list of words, one of which is exactly value</p>
+
+    <select name="" id="">
+        <option value="null">choose language</option>
+        <optgroup label="web frontend">
+            <option value="html">html</option>
+            <option value="css">css</option>
+        </optgroup>
+        <optgroup label="server web">
+            <option value="node">Node JS</option>
+            <option value="express">Express JS</option>
+        </optgroup>
+    </select>
+</body>
+</html>
