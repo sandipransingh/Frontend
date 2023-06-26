@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav a {
+            text-decoration: none;
+            padding: 12px 14px;
+            background-color: slateblue;
+            color: #fff;
+        }
+
+        body {
+            display: flex;
+        }
+
+        div {
+            height: 300px;
+            width: 100% auto;
+            padding: 20px;
+        }
+
+        div:target {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h3>:target</h3>
+
+    <nav>
+        <a href="#sec1">section-1</a>
+        <a href="#sec2">section-2</a>
+        <a href="#sec3">section-3</a>
+    </nav>
+
+    <div id="section 1">
+        <h3>welcome to section 1</h3>
+    </div>
+    <div id="section 2">
+        <h3>welcome to section 2</h3>
+    </div>
+    <div id="section 3">
+        <h3>welcome to section 3</h3>
+    </div>
+
+</body>
+</html>
