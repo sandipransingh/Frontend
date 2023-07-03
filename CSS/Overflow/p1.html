@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+            margin: 100px;
+            border: 3px solid #ff2200;
+        }
+        .card-1 {
+            overflow: hidden; /* auto, scroll, none, hidden */
+        }
+        .card-2 {
+            overflow: auto;
+        }
+        .card-3 {
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h3>overflow: hidden</h3>
+    <div class="card-1">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse culpa doloremque ipsum voluptates quo veritatis enim suscipit, voluptas error nisi aperiam? Porro temporibus earum possimus deleniti ut. Voluptate,Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit velit possimus non. Sit odit adipisci asperiores, quasi eos facere iure doloribus aliquid laboriosam doloremque nam deserunt temporibus quia consequuntur?</p>
+    </div>
+    <h3>overflow: auto</h3>
+    <div class="card-2">
+        <p>Loremipsumdolorsitamet,consecteturadipisicingelit.Accusamusesseculpadoloremqueipsumvoluptatesquo veritatisenimsuscipit,voluptaserrornisiaperiam?Porrotemporibusearumpossimusdelenitiut.Voluptate,Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit velit possimus non. Sit odit adipisci asperiores, quasi eos facere iure doloribus aliquid laboriosam doloremque nam deserunt temporibus quia consequuntur?</p>
+    </div>
+    <h3>overflow-x and overflow-y</h3>
+    <div class="card-3">
+        <p>Loremipsumdolorsitamet,consecteturadipisicingelit.Accusamusesseculpadoloremqueipsumvoluptatesquo veritatisenimsuscipit,voluptaserrornisiaperiam?Porrotemporibusearumpossimusdelenitiut.Voluptate,Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit velit possimus non. Sit odit adipisci asperiores, quasi eos facere iure doloribus aliquid laboriosam doloremque nam deserunt temporibus quia consequuntur?</p>
+    </div>
+</body>
+</html>
