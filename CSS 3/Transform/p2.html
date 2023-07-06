@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            transition: all 2s;
+            margin: auto;
+        }
+        .b1 { background-color: rosybrown; }
+        .b2 { background-color: slateblue; }
+        .b3 { background-color: saddlebrown; }
+
+        .b1:hover {
+            transform: scale(2,2.5);
+            background-color: orange;
+        }
+        .b2:hover { transform: scaleX(3); background-color: greenyellow;}
+        .b3:hover { transform: scaleY(2.4); background-color: aquamarine;}
+
+        .b1,.b2,.b3 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>scale(x,y)</h1>
+    <div class="b1">
+        <p>Content here</p>
+    </div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>

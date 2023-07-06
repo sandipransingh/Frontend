@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            transition: all 2s;
+        }
+        .b1 { background-color: rosybrown; }
+        .b2 { background-color: slateblue; }
+        .b3 { background-color: saddlebrown; }
+
+        .b1:hover {
+            transform: rotate(120deg);
+            background-color: orange;
+        }
+        .b2:hover { transform: rotateX(60deg); background-color: greenyellow;}
+        .b3:hover { transform: rotateY(60deg); background-color: aquamarine;}
+
+        .b1,.b2,.b3 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>rotate(deg)</h1>
+    <div class="b1">
+        <p>Content here</p>
+    </div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>

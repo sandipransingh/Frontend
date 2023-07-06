@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            transition: all 2s;
+        }
+
+        .b1 { background-color: rosybrown; }
+        .b2 { background-color: slateblue; }
+        .b3 { background-color: saddlebrown; }
+
+        .b1:hover {
+            transform: translate(300px,300px);
+            background-color: orange;
+        }
+        .b2:hover { transform: translateX(300px); background-color: greenyellow;}
+        .b3:hover { transform: translateY(300px); background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <h1>translate(x,y)</h1>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>
