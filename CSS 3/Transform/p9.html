@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            margin: auto;
+            transition: all 2s;
+        }
+        .img1:hover {
+            transform: rotateX(65deg);
+        }
+        .img2:hover {
+            transform: rotateY(65deg);
+        }
+        .img3:hover {
+            transform: rotateZ(65deg);
+        }
+        .img4:hover {
+            transform: rotate3d(1,-5,1,-60deg);
+            transform-origin: 80% 80%;
+            box-shadow: 3px 5px 16px rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <img class="img1" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="nature" width="100" height="80">
+    <img class="img2" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="nature" width="100" height="80">
+    <img class="img3" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="nature" width="100" height="80">
+    <img class="img4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="nature">
+</body>
+</html>

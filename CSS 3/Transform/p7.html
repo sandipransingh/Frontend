@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            background-color: teal;
+            color: #fff;
+            transition: all 5s;
+        }
+        .blk:hover {
+            transform: translate3d(500px,200px,300px); /* standard ie*/
+            -webkit-transform: translate3d(500px,200px,300px); /* chrome edge*/
+            -moz-transform: translate3d(500px,200px,300px);
+            -o-transform: translate3d(500px,200px,300px);
+        }
+    </style>
+</head>
+<body>
+    <h3>translate3d</h3>
+
+    <div class="blk">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati doloremque quisquam accusantium perferendis repellendus unde rem molestiae eligendi nemo. Nam doloribus facere voluptatum laudantium fugiat minima quidem architecto in.
+    </div>
+</body>
+</html>
