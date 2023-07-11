@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            background: linear-gradient(to top right, orange,green,gold);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .butterfly {
+            /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: butterfly 2s alternate infinite linear;
+        }
+        @keyframes butterfly {
+            0% {
+                width: 300px;
+                top: 30%;
+                background: linear-gradient(totop right, orange,green,gold);
+            }
+            100% {
+                width: 50px;
+                top: 50%;
+                background: linear-gradient(to top right, green,orange,green);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>butterfly animation effect</h1>
+    <div class="butterfly"></div>
+</body>
+</html>

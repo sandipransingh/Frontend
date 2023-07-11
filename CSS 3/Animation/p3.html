@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+            background-color: crimson;
+            color: #fff;
+            transition: width 2s;
+        }
+        div:hover {
+            width: 100px;
+            background-color: gold;
+        }
+
+        #d1 { transition-timing-function: linear;} /* cubic-bezier(0,0,1,1)*/
+        #d1 { transition-timing-function: ease-in;}/* cubic-bezier(0.42,0,1,1)*/
+        #d1 { transition-timing-function: ease-out;}/* cubic-bezier(0,0,0.58,1)*/
+        #d1 { transition-timing-function: ease;}/* cubic-bezier(0.25,0.1,0.25,1)*/
+        #d1 { transition-timing-function: ease-in-out;}/* cubic-bezier(0.42,0,0.58,1)*/
+        #d1 { transition-timing-function: steps(6,jump-start);}/* jump-start,jump-end,start,end,jump-both,jump-one*/
+        #d1 { transition-timing-function: cubic-bezier(0.5,0.7,0.8,0.1);}/* */
+    </style>
+</head>
+<body>
+    <h3>transition timing functions</h3>
+    <div id="d1">linear</div>
+    <div id="d2">ease-in</div>
+    <div id="d3">ease-out</div>
+    <div id="d4">ease</div>
+    <div id="d5">ease-in-out</div>
+    <div id="d6">Steps(n,step-function)</div>
+    <div id="d7">cubic-bezier(p1,p2,p3,p4) p1-p3 0-1</div>
+</body>
+</html>

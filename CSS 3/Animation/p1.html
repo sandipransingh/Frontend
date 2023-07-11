@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            position: absolute;
+            /* animation: name duration timing function delay iteration-count direction fill-mode*/
+            animation: anim1 10s; /* short hand property */
+        }
+        /* keyframes are the block of the animations */
+        /* @keyframe name {
+            code
+        }
+          individual animation properties
+
+          animation-name => name of the keyframe
+          animation-duration => time duration to complete one cycle of animation
+          animation-timing function => built in names 
+          animation-delay => time delay tostart next cycle of animation
+          animation-iteration-count => number of cycles
+          animation-direction => clock wise or anti clock wise
+          animation-fill-mode => built in names
+          */
+          @keyframes anim1 {
+            /* starting css*/
+            from {
+                background-color: orangered;
+                top: 0px;
+                left: 0px;
+            }
+            to {
+                background-color: gold;
+                top: 80%;
+                right: 0px;
+            }
+          }
+    </style>
+</head>
+<body>
+    <h1>keyframes</h1>
+    <div class="b1"></div>
+</body>
+</html>
