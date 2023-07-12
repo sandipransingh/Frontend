@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
         div {
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-image: linear-gradient(to top left,orange,orangered,green);
             border-radius: 50%;
             margin-left: auto;
@@ -21,6 +21,16 @@
             animation-iteration-count: infinite;
             animation-direction: normal /*reverse,normal,alternate-reverse,alternate*/;
         }
+
+        .circle1 {
+            animation-direction: reverse;
+        }
+        .circle2 {
+            animation-direction: alternate;
+        }
+        .circle3 {
+            animation-direction: alternate-reverse;
+        }
         @keyframes circle {
             0% {
                 transform: rotate(0deg);
@@ -32,6 +42,16 @@
     </style>
 </head>
 <body>
+    <h1>normal direction</h1>
     <div class="circle"></div>
+
+    <h1>reverse direction</h1>
+    <div class="circle circle1"></div>
+
+    <h1>alternate-direction</h1>
+    <div class="circle circle2"></div>
+
+    <h1>alternate-reverse direction</h1>
+    <div class="circle circle3"></div>
 </body>
 </html>

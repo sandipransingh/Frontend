@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0px;
+            margin: 0px;
+            overflow-x: hidden;
+        }
+        header {
+            width: 100%;
+            background-color: crimson;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h3 {
+            color: #fff;
+            font-size: x-large;
+            text-transform: uppercase;
+        }
+        header .menu a{
+            text-decoration: none;
+            background-color: gold;
+            padding: 13px 15px;
+        }
+        header .menu a:hover {
+            background-color: #222;
+            color: #fff;
+        }
+        header button {
+            display: none;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+        }
+        .main {
+            display: flex;
+            height: 100vh;
+        }
+        .main aside {
+            background: cornflowerblue;
+            padding: 20px;
+            width: 100px;
+        }
+        .main div {
+            padding: 20px;
+        }
+
+         @media screen and (max-width:780px) {
+            header {
+                display: block;
+            }
+            header .menu a {
+                display: none;
+            }
+            header button {
+                display: block;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                font-size: xx-large;
+            }
+            button {
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                cursor: pointer;
+            }
+            .menu.responsive {
+                display: block;
+                transition: all 0.5s ease;
+            }
+            .menu.responsive a {
+                display: block;
+                text-align: left;
+                width: 100%;
+                transition: all 0.5s ease;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h3>header</h3>
+        <nav class="menu" id="topMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+        </nav>
+        <button class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section class="main">
+        <aside>
+            sidebar
+        </aside>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi veritatis debitis, laboriosam possimus iusto voluptatibus fugit expedita eum, sunt modi culpa explicabo et dignissimos iure perferendis cumque? Laudantium, quam?</p>
+        </div>
+    </section>
+    <footer>
+        <p>All Rights Reserved&copy;</p>
+    </footer>
+
+    <script>
+        const toggleMenu = () => {
+            let x = document.getElementById('topMenu');
+              if(x.className === "menu") {
+                // x.className += "responsive";
+                x.classList.add("responsive");
+              } else {
+                // x.className = "menu";
+                x.classList.remove("responsive");
+              }
+        }
+    </script>
+</body>
+</html>
