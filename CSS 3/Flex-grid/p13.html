@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap: 10px;
+        }
+        .gallery img {max-width: 100%}
+
+        .gallery img:nth-child(odd) {
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="./images/images.jpg" alt="">
+        <img src="./images/images1.webp" alt="">
+        <img src="./images/istockphoto-1146517111-612x612.jpg" alt="">
+        <img src="./images/pexels-photo-1121782.webp" alt="">
+        <img src="./images/pexels-photo-1242764.jpeg" alt="">
+        <img src="./images/pexels-photo-1552212.jpeg" alt="">
+        <img src="./images/pexels-photo-345522.jpeg" alt="">
+        <img src="./images/pexels-photo-3971769.jpeg" alt="">
+        <img src="./images/pexels-photo-879794.jpeg" alt="">
+        <img src="./images/pexels-photo.jpg" alt="">
+        <img src="./images/pexels-pixabay-268533.jpg" alt="">
+    </div>
+</body>
+</html>

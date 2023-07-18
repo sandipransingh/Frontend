@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+            background-color: slateblue;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .card {
+            max-width: 100%;
+            background-color: gold;
+            padding: 20px;
+            color: #222;
+            height: 300px;
+            margin: 10px;
+        }
+        /* mobile input - 576px
+        tabs   1024 - input - 576
+        laptop/desktop 1440 - input - 1024
+        4k screens input - 1440 */
+
+        /* screen => a screen value*/
+
+        @media screen and (max-width:576px) {
+            .container {
+                background-color: #ccc;
+                display:flex;
+                flex-direction: column;
+            }
+            .card {
+                background-color: deeppink;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore repellat laudantium molestiae inventore quas, quisquam atque corporis debitis. Repellendus ipsam animi necessitatibus ex accusantium est provident! Voluptate, aliquam eligendi!</p>
+        </div>
+        <div class="card">
+            <h3>header-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore repellat laudantium molestiae inventore quas, quisquam atque corporis debitis. Repellendus ipsam animi necessitatibus ex accusantium est provident! Voluptate, aliquam eligendi!</p>
+        </div>
+        <div class="card">
+            <h3>header-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore repellat laudantium molestiae inventore quas, quisquam atque corporis debitis. Repellendus ipsam animi necessitatibus ex accusantium est provident! Voluptate, aliquam eligendi!</p>
+        </div>
+        <div class="card">
+            <h3>header-4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore repellat laudantium molestiae inventore quas, quisquam atque corporis debitis. Repellendus ipsam animi necessitatibus ex accusantium est provident! Voluptate, aliquam eligendi!</p>
+        </div>
+    </div>
+</body>
+</html>
