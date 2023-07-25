@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- header scropt -->
+    <script>
+        //header script
+           //scope
+           /* integer, float,double => number */
+        var a=12; //global
+        const b=33; // global  -> defined outside the block
+        let c=44;
+
+        var x= 46;
+
+        document.write("<h2> a = "+ a +" <h2>");
+
+        document.write(`<h2> b = ${b} </h2>`);
+        
+        //global
+
+        if(x > 10) {
+            document.write(`<h1> a = ${a} , b = ${b} </h1>`);
+        }
+    </script>
+</head>
+<body>
+    <!--body script-->
+    <script>
+        //1. body script
+     //datatype name = value; - variables - var,
+        var isAdmin = false;
+        var title = "welcome to js"; /*string and char => string */
+        var x = 12342.3433565; /*double*/
+        var y = 34.343 /*float*/
+            //array
+        var colors = ["one",2,true];
+            //object
+        // var user = {
+        //     name: "ramesh",
+        //     email: "ramesh@gmail.com"
+        // };
+
+        // document.write(a);
+        // document.write("<h1> int =" +a + "</h1>");
+        // document.write(`<h1> int = ${a} </h1>`); /* joining string and var = concat */
+        // document.write(`<h1> isAdmin= ${isAdmin} </h1>`);
+        // document.write(`<h1> title = ${title} </h1>`);
+        // document.write(`<h1> x = ${x} </h1>`);
+        // document.write(`<h1> y = ${y} </h1>`);
+        // document.write(`<h1> colors = ${colors} </h1>`);
+
+        document.write(title);
+
+        document.write("<h1>" + title + "</h1>");
+
+        document.write(`<h1> ${title} </h1>`);
+        document.write(`<h1> x = ${x} </h1>`);
+        document.write(`<h1> y = ${y} </h1>`);
+        document.write(`<h1> isAdmin= ${isAdmin} </h1>`);
+        document.write(`<h1> colors = ${colors} </h1>`);
+    </script>
+    <!-- external script -->
+    <script src="ext.js"></script>
+</body>
+</html>

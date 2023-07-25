@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue {color: blue;}
+        .red {color: red;}
+    </style>
+</head>
+<body>
+    <h3>operators</h3>
+    <!--
+        1. arithmatic + - * / %
+        2. logical  ! && ||
+        3. relational/conditional > < >=  <= ==(equal to) ===(strictly equal to) !==(not strictly equal to)
+        4. assignment = += -= /= %=(a+=10) = (a = a+10)
+        5. increment / dcrement
+            pre ++i --i
+            posti++ i--
+        6. misc . , : ; '' "" () {} [] ~ $ # @ => (arrow operator)
+        7. ternary -> condition ? "true":"false"    
+    -->
+
+    <script>
+        /*
+        == value
+        === datatype & value
+        */
+       if(30 === "30") {
+        console.log('values are equal');
+        document.write(`<h1 class="blue">values are equal</h1>`);
+       } else {
+        console.log('values are not equal');
+        document.write(`<h1 class="red">values are not equal</h1>`)
+       }
+    </script>
+</body>
+</html>
