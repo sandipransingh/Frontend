@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>functions</h1>
+
+    <script>
+       // getName(), get_name() (get-name() -> dont use) get_my_name() getmyName()
+       // function  name(parameter) {
+
+       //}
+
+       //name(param value); -> direct call
+       /*
+       1. call by value - direct call
+       2. call by reference(indirect call) not applicable in javascript
+       */
+
+       var x = 123;
+
+       function display(name) {
+        document.write(`<h1> welcome to function = ${name} </h1>`);
+       }
+
+       //direct call
+       display("javascript");
+       display(); //undefined parameters
+       display(""); //empty value
+       display(null); //null
+
+       function product(x,y) {
+        document.write(`<h1> product = ${x * y} </h1>`);
+       }
+
+       product(12,30);
+       product(16,4);
+
+       //(a+b)2-2ab
+       function num(a,b) {
+        let res = ((a*a) + (b*b));
+        document.write(`<h1> result = ${res} </h1>`);
+       }
+       num(3,4);
+
+       function number(a,b,c) {
+        let res = ((a*a+b*b+c*c)-(2*a*b)+(2*b*c)+(2*c*a));
+        document.write(`<h1> result = ${res} </h1>`);
+       }
+
+       number(3,4,5);
+    </script>
+</body>
+</html>
