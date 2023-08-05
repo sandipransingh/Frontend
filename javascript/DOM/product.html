@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+
+      } 
+      
+      #userInfo{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        
+    
+      }
+      #userInfo div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px;
+        padding: 20px;
+        background:linear-gradient(skyblue,rgb(88, 88, 130)) ;
+
+
+      }
+      #userInfo img{
+        box-shadow: 0px 0px 10px;
+        
+      }
+    </style>
+</head>
+<body>
+    <h3>products</h3>
+
+    <section id="userInfo"></section>
+    <script>
+        var products = [
+            {
+      id: 1,
+      title: "iPhone 9",
+      description: "An apple mobile which is nothing like apple",
+      price: 549,
+      discountPercentage: 12.96,
+      rating: 4.69,
+      stock: 94,
+      brand: "Apple",
+      category: "smartphones",
+      thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            },
+            {
+      id: 2,
+      title: "iPhone x",
+      description: "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      price: 899,
+      discountPercentage: 17.94,
+      rating: 4.44,
+      stock: 34,
+      brand: "Apple",
+      category: "smartphones",
+      thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+            },
+            {
+      id: 3,
+      title: "Samsung Universe 9",
+      description: "Samsung's new variant which goes beyond Galaxy to the Universe",
+      price: 1249,
+      discountPercentage: 15.46,
+      rating: 4.09,
+      stock: 36,
+      brand: "Samsung",
+      category: "smartphones",
+      thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+            },
+        ];
+
+        console.log('products =', products);
+    var container = document.querySelector("#userInfo");
+
+    products.forEach(function(val,index) {
+
+        // var container=document.getElementById("block");
+        //     var section = document.createElement("section");
+        //     block.appendChild(section)
+
+          let card = document.createElement("div");
+          let eId = document.createElement('h3');
+          let eTitle = document.createElement("h3");
+          let eDescription = document.createElement('p');
+          let ePrice = document.createElement('p');
+          let eDiscountPercentage = document.createElement('h3');
+          let eRating = document.createElement('h3');
+          let eStock = document.createElement('h3');
+          let eBrand = document.createElement('h3');
+          let eCategory = document.createElement('p');
+          let eThumbnail = document.createElement("img");
+
+          eThumbnail.src =val.thumbnail;
+          eThumbnail.alt ="no image";
+          eThumbnail.width=200;
+          eThumbnail.height=200;
+          eId.textContent = val.id;
+          eTitle.textContent = `${val.title}`;
+          eDescription.textContent= val.description;
+          ePrice.textContent = val.price;
+          eDiscountPercentage.textContent = val.discountPercentage;
+          eRating.textContent= val.rating;
+          eBrand.textContent = val.brand;
+          eCategory.textContent= val.category;
+          eThumbnail.textContent= val.thumbnail;
+
+          card.appendChild(eThumbnail);
+          card.appendChild(eId);
+          card.appendChild(eTitle);
+          card.appendChild(eDescription);
+          card.appendChild(ePrice);
+          card.appendChild(eDiscountPercentage);
+          card.appendChild(eRating);
+          card.appendChild(eBrand);
+          card.appendChild(eCategory);
+          
+
+
+          container.appendChild(card);
+
+    });
+    </script>
+</body>
+</html>
