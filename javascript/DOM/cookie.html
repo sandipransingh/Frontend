@@ -8,7 +8,8 @@
 <body>
     <h1>document.cookie</h1>
 
-    <button onclick="set()">set cookie</button>
+    <button onclick="set()">Set Cookie</button>
+    <button onclick="clearHandler()">Clear Cookie</button>
     <script>
         function set() {
             var x = prompt('Enter your input?');
@@ -16,6 +17,23 @@
             alert("cookie successfully set");
             window.location.reload(); //refreshing current page
         }
+
+        // clear cookie
+        function clearHandler() {
+            if(confirm(`Are you sure to clear cookie?`)) {
+                let myTime = new Date();
+
+                myTime.setTime(myTime.getTime()-1);
+                console.log('myTime', myTime.toGMTString());
+
+                document.cookie = `userId=;expires=${myTime.toGMTString()}`;
+                alert('cookie cleared successfully');
+                window.location.reload(); // page refresh current active page
+            } else {
+                console.log('failed');
+            }
+        }
+
 
         // self triger function
         (function() {
