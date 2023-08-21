@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>username validation</h3>
+
+    <form action="" autocomplete="off">
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user" onkeyup="validate()">
+        <strong id="status"></strong>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validate() {
+            var user = document.getElementById('user');
+            var status = document.getElementById('status');
+            console.log('user =', user.value);
+
+            if(user.value.length <= 4) {
+                status.innerText = `user input length must be greater than 4 charcaters`;
+                status.style.color = "orangered";
+            } else if(user.value.length > 4) {
+                status.innerText = `valid username`;
+                status.style.color = "green";
+            }
+
+            setTimeout(function(){
+                status.innerText = "";
+            }, 5000)
+        }
+    </script>
+</body>
+</html>

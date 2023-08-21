@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="cForm" onsubmit="return validate(event)" method="post">
+        <h2>contact form</h2>
+        <div class="row">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+            <strong class="erroe" id="nameErr"></strong>
+        </div>
+
+        <div class="row">
+            <label for="email">Email id</label>
+            <input type="text" name="email" id="email">
+            <strong class="error" id="emailErr"></strong>
+        </div>
+
+        <div class="row">
+            <label for="mobile">Mobile number</label>
+            <input type="text" name="mobile" id="mobile" maxlength="10">
+            <strong class="error" id="mobileErr"></strong>
+        </div>
+
+        <div class="row">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="null">Choose city name</option>
+                <option value="bng">Bengaluru</option>
+                <option value="mys">Mysore</option>
+                <option value="dvg">Davanagere</option>
+                <option value="hsn">Hasan</option>
+                <option value="ckm">Chikkamagaluru</option>
+            </select>
+            <strong class="error" id="cityErr"></strong>
+        </div>
+
+        <div class="row">
+            <label for="gender">Gender</label>
+            <div class="form-inline">
+                <label>
+                    <input type="radio" name="gender" id="gender" value="male"> male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="female"> Female
+                </label>
+            </div>
+            <strong class="err" id="genderErr"></strong>
+        </div>
+
+        <div class="row">
+            <label for="lang">Language (optional)</label>
+            <div class="form-inline">
+                <label>
+                    <input type="checkbox" name="lang[]" value="kannada"> kannada
+                </label>
+                <label>
+                    <input type="checkbox" name="lang[]" value="english"> English
+                </label>
+                <label>
+                    <input type="checkbox" name="lang[]" value="hindi"> Hindi
+                </label>
+                <label>
+                    <input type="checkbox" name="lang[]" value="tamil"> Tamil
+                </label>
+                <label>
+                    <input type="checkbox" name="lang[]" value="telgu"> Telgu
+                </label>
+            </div>
+            <strong class="error" id="langErr"></strong>
+        </div>
+
+        <div class="row">
+            <div class="btn-group">
+                <input type="submit" value="submit" class="btn-sub">
+                <input type="reset" value="reset" class="btn-rst">
+            </div>
+        </div>
+    </form>
+
+    <script src="./js/validate.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>mobile number validation (Indian mobile number)</h3>
+
+    <form action="">
+        <label for="mobile">Mobile</label>
+        <input type="text" name="mobile" id="mobile" maxlength="10" onkeyup="validate()">
+        <strong id="status"></strong>
+
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+<!-- string@string.string -->
+    <script>
+        function validate() {
+            var mobile = document.getElementById("mobile").value;
+            var status = document.getElementById("status");
+            var regex = /^[6-9]\d{9}$/; // 6789- 9digits (0-9)
+
+            if(mobile === "") {
+                status.innerText = 'Mobile field must be filled';
+                status.style.color = "orangered";
+            } else {
+                if(regex.test(mobile) === false) {
+                    status.innerText = 'Invalid Indian mobile number';
+                    status.style.color = "orangered";
+                } else {
+                    status.innerText = 'valid indian mobile number';
+                    status.style.color = "green";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
