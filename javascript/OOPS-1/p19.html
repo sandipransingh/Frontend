@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Accessor properties (get and set)</h1>
+
+    <script>
+          var user = {
+            name: "john",
+            surName: "mathew",
+            email: "john@gmail.com"
+          };
+
+          Object.defineProperty(user, 'fullName', {
+             get: function () {
+                return this.name + " " + this.surName; // `${this.name} ${this.surName}`
+             },
+             set: function (value) {
+                [this.name, this.surName] = value.split(" ");
+             }
+          });
+
+          console.log('fullName =', user.fullName);  // john mathew
+          //console.log('user =', user);
+
+          user.surName = "david";
+
+          console.log('fullName =', user.fullName);  // john david
+          //console.log('user =', user);
+
+          user.name = "Andrew";
+
+          console.log('fullName =', user.fullName); // Andrew david
+          //console.log('user =', user);
+    </script>
+</body>
+</html>
