@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inheritance Inside class</h1>
+
+    <script>
+        class Course {
+            constructor(ti,fe) {
+                this.title = ti;
+                this.fee = fe;
+            }
+              // definition of function
+            getCourseDetails() {
+                document.write(`<h1> course name = ${this.title}, and fee = ${this.fee} </h1>`);
+            }
+        }
+
+        // base class
+        class user extends Course {
+            constructor(x,y) {
+                super(x,y);  // super method call refers to super class constructor
+            }
+        }
+
+        let x = new user("MERN", 1234);
+
+        x.getCourseDetails();  // function call
+    </script>
+</body>
+</html>
