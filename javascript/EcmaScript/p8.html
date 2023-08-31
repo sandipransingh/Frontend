@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>spread (...) operator with Math Constructor</h3>
+    <!-- receive an array return as parameter -->
+
+    <script>
+        var num = [44,455,56,11,77,99,900];
+        console.log('num =', num);
+        console.log('parameters (spread) = ', ...num);
+
+        document.write(`<h3> Max = ${Math.max(num) } </h3>`); // NAN
+        document.write(`<h3> Max = ${Math.max([44,455,56,11,77,99,900]) } </h3>`); // NAN
+
+        document.write(`<h3> Max = ${Math.max(...num) } </h3>`); // arrayy into parameters
+        document.write(`<h3> Min = ${Math.min(44,455,56,11,77,99,900) } </h3>`);  //11
+    </script>
+</body>
+</html>
